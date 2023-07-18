@@ -8,11 +8,11 @@ Para ocuparlo seguir los siguientes pasos:
 
 2. Realizar un clone del proyecto desde GitHub.
 
-3. Instalar los modulos necesarios:
+3. Acceder al directorio del proyecto e instalar los modulos necesarios:
 
     $ npm i 
 
-4. Ubicar las credenciales y otras variables de entorno como la url de mongo, se encuentran en mongoDB Atlas, en Cluster, Connect your Application, sustituir en el archivo .env.
+4. Ubicar las credenciales y otras variables de entorno como la url de mongo, se encuentran en mongoDB Atlas, en Cluster, Connect your Application, Drivers. La password se ubica en Database Access, Edit User. Sustituir estos datos en el archivo .env:
 
     URL_MONGODB=mongodb+srv://{username}:{password}@{cluster}.mongodb.net/{database}?retryWrites=true&w=majority
 
@@ -37,7 +37,7 @@ Para ocuparlo seguir los siguientes pasos:
 
 8. Utilizar los servicios configurados en el puerto 8184:
 
-GET - http://localhost:8184/api
+GET - http://localhost:8184/api -   No tiene seguridad, para validar funcionamiento de la API.
 GET - http://localhost:8184/api/personas/util/{id}?query1=valor1&query2=valor2
 GET - http://localhost:8184/api/personas
 GET - http://localhost:8184/api/personas/60761a6dc8b4b265edf65deb
